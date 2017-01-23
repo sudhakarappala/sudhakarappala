@@ -1,4 +1,5 @@
-Producer: produces messages and has listener for ACK from consumers. But only consumer1 ACKs and not Consumer2
 
-Consumer1 listener handler method is returning String. So this will write replies to reply queue(ie ack to producer)
-Consumer2 listener handler method is returning void. so this will not ack to producer
+RabbitProducer: boot app which produces messages and has listener for ACK from consumers. But only consumer1 ACKs and not Consumer2
+
+RabbitConsumer1: boot app which has listener with returning String. So this will write replies to reply queue(ie ack to producer)
+RabbitConsumer2: boot app which has listener handler method is returning void. so this will not ack to producer
