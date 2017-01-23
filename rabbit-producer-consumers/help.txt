@@ -1,0 +1,4 @@
+Producer: produces messages and has listener for ACK from consumers. But only consumer1 ACKs and not Consumer2
+
+Consumer1 listener handler method is returning String. So this will write replies to reply queue(ie ack to producer)
+Consumer2 listener handler method is returning void. so this will not ack to producer
